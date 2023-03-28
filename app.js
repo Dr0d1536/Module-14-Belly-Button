@@ -8,7 +8,7 @@ d3.json(url).then((data) => {
     samples = data.samples;
     metadata = data.metadata;
        
-graphs.bar_graph(940.data.samples);
+
 
 //Iterate data
     for (i = 0; i < samples.length; i++){
@@ -28,6 +28,8 @@ graphs.bar_graph(940.data.samples);
         x_values_bar = bar_top_ten.map((x) => `OTU: ${(x[1])}`);
         y_values_bar = bar_top_ten.map((x) => x[3]);
         text_bubble_bar = bar_top_ten.map((x) => x[2]);
+    
+        
     
         let bar_graph = {
             x: y_values_bar.reverse(), 
